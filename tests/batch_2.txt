@@ -1,0 +1,5 @@
+When the green flag is clicked, move forward by 50 steps and rotate right 45 degrees, repeating forever.
+When the 'down arrow' key is pressed, decrease the sprite's size by 10.
+When the green flag is clicked, repeat until X is greater than 150: move 10 steps.
+When the green flag is clicked, join "X is " with current X position and say it.
+When the 'd' key is pressed, set X to 30 and Y to 6.

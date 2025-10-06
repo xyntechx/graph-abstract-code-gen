@@ -1,0 +1,276 @@
+{
+    "WhenFlagClicked": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "WhenKeyPressed": {
+        "inPorts": [],
+        "fields": [{ "id": "KEY_OPTION" }],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "MoveSteps": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "STEPS" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "TurnRight": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "DEGREES" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "TurnLeft": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "DEGREES" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "GoToRandom": {
+        "inPorts": [{ "id": "EXEC" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "GotoXY": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "X" }, { "id": "Y" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "GlideToRandom": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "SECS" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "GlideToXY": {
+        "inPorts": [
+            { "id": "EXEC" },
+            { "id": "SECS" },
+            { "id": "X" },
+            { "id": "Y" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "PointInDirection": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "DIRECTION" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "ChangeXBy": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "DX" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "SetXTo": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "X" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "ChangeYBy": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "DY" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "SetYTo": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "Y" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "XPosition": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "YPosition": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Say": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "MESSAGE" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "SayForSecs": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "MESSAGE" }, { "id": "SECS" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "Think": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "MESSAGE" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "ThinkForSecs": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "MESSAGE" }, { "id": "SECS" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "ChangeSizeBy": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "CHANGE" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "SetSizeTo": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "SIZE" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "Wait": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "SECS" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "Repeat": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "TIMES" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }, { "id": "SUBSTACK" }]
+    },
+    "Forever": {
+        "inPorts": [{ "id": "EXEC" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }, { "id": "SUBSTACK" }]
+    },
+    "If": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "CONDITION" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }, { "id": "SUBSTACK" }]
+    },
+    "IfElse": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "CONDITION" }],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN" },
+            { "id": "SUBSTACK_IF" },
+            { "id": "SUBSTACK_ELSE" }
+        ]
+    },
+    "WaitUntil": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "CONDITION" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "RepeatUntil": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "CONDITION" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN" }, { "id": "SUBSTACK" }]
+    },
+    "Stop": {
+        "inPorts": [{ "id": "EXEC" }],
+        "fields": [{ "id": "STOP_OPTION" }],
+        "outPorts": []
+    },
+    "KeyPressed": {
+        "inPorts": [],
+        "fields": [{ "id": "KEY_OPTION" }],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "MouseDown": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Add": {
+        "inPorts": [{ "id": "NUM1" }, { "id": "NUM2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Subtract": {
+        "inPorts": [{ "id": "NUM1" }, { "id": "NUM2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Multiply": {
+        "inPorts": [{ "id": "NUM1" }, { "id": "NUM2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Divide": {
+        "inPorts": [{ "id": "NUM1" }, { "id": "NUM2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Random": {
+        "inPorts": [{ "id": "FROM_NUM" }, { "id": "TO_NUM" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "GreaterThan": {
+        "inPorts": [{ "id": "OPERAND1" }, { "id": "OPERAND2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "LessThan": {
+        "inPorts": [{ "id": "OPERAND1" }, { "id": "OPERAND2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Equals": {
+        "inPorts": [{ "id": "OPERAND1" }, { "id": "OPERAND2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "And": {
+        "inPorts": [{ "id": "OPERAND1" }, { "id": "OPERAND2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Or": {
+        "inPorts": [{ "id": "OPERAND1" }, { "id": "OPERAND2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Not": {
+        "inPorts": [{ "id": "OPERAND" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Join": {
+        "inPorts": [{ "id": "STRING1" }, { "id": "STRING2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "LetterOf": {
+        "inPorts": [{ "id": "LETTER_NUM" }, { "id": "STRING" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "LengthOf": {
+        "inPorts": [{ "id": "STRING" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Contains": {
+        "inPorts": [{ "id": "STRING1" }, { "id": "STRING2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Mod": {
+        "inPorts": [{ "id": "NUM1" }, { "id": "NUM2" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "Round": {
+        "inPorts": [{ "id": "NUM" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "MathFunction": {
+        "inPorts": [{ "id": "NUM" }],
+        "fields": [{ "id": "OPERATOR" }],
+        "outPorts": [{ "id": "OUTPUT" }]
+    },
+    "SetVariable": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "VALUE" }],
+        "fields": [{ "id": "VARIABLE" }],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "ChangeVariableBy": {
+        "inPorts": [{ "id": "EXEC" }, { "id": "VALUE" }],
+        "fields": [{ "id": "VARIABLE" }],
+        "outPorts": [{ "id": "THEN" }]
+    },
+    "GetVariable": {
+        "inPorts": [],
+        "fields": [{ "id": "VARIABLE" }],
+        "outPorts": [{ "id": "OUTPUT" }]
+    }
+}

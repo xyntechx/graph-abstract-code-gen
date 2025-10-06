@@ -1,0 +1,1176 @@
+{
+    "WhenFlagClicked": {
+        "description": "Event triggered when the green flag is clicked",
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "WhenKeyPressed": {
+        "description": "Event triggered when a specific key is pressed",
+        "inPorts": [],
+        "fields": [
+            {
+                "id": "KEY_OPTION",
+                "type": "string",
+                "description": "The key to detect (space, up arrow, a, etc.)"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "MoveSteps": {
+        "description": "Move sprite forward by specified number of steps",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "STEPS",
+                "type": "number|Node",
+                "description": "Number of steps to move"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "TurnRight": {
+        "description": "Turn sprite clockwise by specified degrees",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "DEGREES",
+                "type": "number|Node",
+                "description": "Degrees to turn clockwise"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "TurnLeft": {
+        "description": "Turn sprite counter-clockwise by specified degrees",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "DEGREES",
+                "type": "number|Node",
+                "description": "Degrees to turn counter-clockwise"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "GoToRandom": {
+        "description": "Move sprite to a random position on stage",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "GotoXY": {
+        "description": "Move sprite to specific x, y coordinates",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            { "id": "X", "type": "number|Node", "description": "X coordinate" },
+            { "id": "Y", "type": "number|Node", "description": "Y coordinate" }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "GlideToRandom": {
+        "description": "Glide sprite to random position over specified duration",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "SECS",
+                "type": "number|Node",
+                "description": "Duration in seconds"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "GlideToXY": {
+        "description": "Glide sprite to specific coordinates over specified duration",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "SECS",
+                "type": "number|Node",
+                "description": "Duration in seconds"
+            },
+            {
+                "id": "X",
+                "type": "number|Node",
+                "description": "Target X coordinate"
+            },
+            {
+                "id": "Y",
+                "type": "number|Node",
+                "description": "Target Y coordinate"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "PointInDirection": {
+        "description": "Point sprite in specified direction",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "DIRECTION",
+                "type": "number|Node",
+                "description": "Direction in degrees (0=up, 90=right, 180=down, 270=left)"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "ChangeXBy": {
+        "description": "Change sprite's x position by specified amount",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "DX",
+                "type": "number|Node",
+                "description": "Amount to change x position"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "SetXTo": {
+        "description": "Set sprite's x position to specific value",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "X",
+                "type": "number|Node",
+                "description": "New x position"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "ChangeYBy": {
+        "description": "Change sprite's y position by specified amount",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "DY",
+                "type": "number|Node",
+                "description": "Amount to change y position"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "SetYTo": {
+        "description": "Set sprite's y position to specific value",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "Y",
+                "type": "number|Node",
+                "description": "New y position"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "XPosition": {
+        "description": "Get sprite's current x position",
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Current x coordinate"
+            }
+        ]
+    },
+    "YPosition": {
+        "description": "Get sprite's current y position",
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Current y coordinate"
+            }
+        ]
+    },
+    "Say": {
+        "description": "Make sprite say something indefinitely",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "MESSAGE",
+                "type": "string|Node",
+                "description": "Message to display"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "SayForSecs": {
+        "description": "Make sprite say something for specified duration",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "MESSAGE",
+                "type": "string|Node",
+                "description": "Message to display"
+            },
+            {
+                "id": "SECS",
+                "type": "number|Node",
+                "description": "Duration in seconds"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "Think": {
+        "description": "Make sprite think something indefinitely",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "MESSAGE",
+                "type": "string|Node",
+                "description": "Thought to display"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "ThinkForSecs": {
+        "description": "Make sprite think something for specified duration",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "MESSAGE",
+                "type": "string|Node",
+                "description": "Thought to display"
+            },
+            {
+                "id": "SECS",
+                "type": "number|Node",
+                "description": "Duration in seconds"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "ChangeSizeBy": {
+        "description": "Change sprite size by specified amount",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "CHANGE",
+                "type": "number|Node",
+                "description": "Amount to change size (percentage)"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "SetSizeTo": {
+        "description": "Set sprite size to specific percentage",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "SIZE",
+                "type": "number|Node",
+                "description": "Size as percentage (100 = normal size)"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "Wait": {
+        "description": "Pause execution for specified duration",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "SECS",
+                "type": "number|Node",
+                "description": "Duration to wait in seconds"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "Repeat": {
+        "description": "Repeat enclosed blocks specified number of times",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "TIMES",
+                "type": "number|Node",
+                "description": "Number of times to repeat"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            },
+            {
+                "id": "SUBSTACK",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be repeated"
+            }
+        ]
+    },
+    "Forever": {
+        "description": "Repeat enclosed blocks forever (simulated with max iterations)",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            },
+            {
+                "id": "SUBSTACK",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be repeated"
+            }
+        ]
+    },
+    "If": {
+        "description": "Execute enclosed blocks if condition is true",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "CONDITION",
+                "type": "Node",
+                "description": "Boolean condition to evaluate"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            },
+            {
+                "id": "SUBSTACK",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be executed if condition is true"
+            }
+        ]
+    },
+    "IfElse": {
+        "description": "Execute first set of blocks if condition is true, otherwise execute second set",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "CONDITION",
+                "type": "Node",
+                "description": "Boolean condition to evaluate"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            },
+            {
+                "id": "SUBSTACK_IF",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be repeated if condition is true"
+            },
+            {
+                "id": "SUBSTACK_ELSE",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be repeated if condition is false"
+            }
+        ]
+    },
+    "WaitUntil": {
+        "description": "Wait until condition becomes true",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "CONDITION",
+                "type": "Node",
+                "description": "Boolean condition to wait for"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "RepeatUntil": {
+        "description": "Repeat enclosed blocks until condition becomes true",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "CONDITION",
+                "type": "Node",
+                "description": "Boolean condition to check"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            },
+            {
+                "id": "SUBSTACK",
+                "type": "List[Node]",
+                "description": "The enclosed block(s) to be repeated until condition becomes true"
+            }
+        ]
+    },
+    "Stop": {
+        "description": "Stop script execution",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            }
+        ],
+        "fields": [
+            {
+                "id": "STOP_OPTION",
+                "type": "string",
+                "description": "What to stop: 'all', 'this script', 'other scripts'"
+            }
+        ],
+        "outPorts": []
+    },
+    "KeyPressed": {
+        "description": "Check if specific key is currently pressed",
+        "inPorts": [],
+        "fields": [
+            {
+                "id": "KEY_OPTION",
+                "type": "string",
+                "description": "Key to check"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if key is pressed, false otherwise"
+            }
+        ]
+    },
+    "MouseDown": {
+        "description": "Check if mouse button is currently pressed",
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if mouse is down, false otherwise"
+            }
+        ]
+    },
+    "Add": {
+        "description": "Add two numbers",
+        "inPorts": [
+            {
+                "id": "NUM1",
+                "type": "number|Node",
+                "description": "First number"
+            },
+            {
+                "id": "NUM2",
+                "type": "number|Node",
+                "description": "Second number"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Sum of the two numbers"
+            }
+        ]
+    },
+    "Subtract": {
+        "description": "Subtract second number from first",
+        "inPorts": [
+            {
+                "id": "NUM1",
+                "type": "number|Node",
+                "description": "First number (minuend)"
+            },
+            {
+                "id": "NUM2",
+                "type": "number|Node",
+                "description": "Second number (subtrahend)"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Difference of the two numbers"
+            }
+        ]
+    },
+    "Multiply": {
+        "description": "Multiply two numbers",
+        "inPorts": [
+            {
+                "id": "NUM1",
+                "type": "number|Node",
+                "description": "First number"
+            },
+            {
+                "id": "NUM2",
+                "type": "number|Node",
+                "description": "Second number"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Product of the two numbers"
+            }
+        ]
+    },
+    "Divide": {
+        "description": "Divide first number by second",
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node", "description": "Dividend" },
+            { "id": "NUM2", "type": "number|Node", "description": "Divisor" }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Quotient of the division (Infinity if divide by zero)"
+            }
+        ]
+    },
+    "Random": {
+        "description": "Generate random integer between two values (inclusive)",
+        "inPorts": [
+            {
+                "id": "FROM_NUM",
+                "type": "number|Node",
+                "description": "Minimum value"
+            },
+            {
+                "id": "TO_NUM",
+                "type": "number|Node",
+                "description": "Maximum value"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Random integer in specified range"
+            }
+        ]
+    },
+    "GreaterThan": {
+        "description": "Check if first value is greater than second",
+        "inPorts": [
+            {
+                "id": "OPERAND1",
+                "type": "any|Node",
+                "description": "First value to compare"
+            },
+            {
+                "id": "OPERAND2",
+                "type": "any|Node",
+                "description": "Second value to compare"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if first > second, false otherwise"
+            }
+        ]
+    },
+    "LessThan": {
+        "description": "Check if first value is less than second",
+        "inPorts": [
+            {
+                "id": "OPERAND1",
+                "type": "any|Node",
+                "description": "First value to compare"
+            },
+            {
+                "id": "OPERAND2",
+                "type": "any|Node",
+                "description": "Second value to compare"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if first < second, false otherwise"
+            }
+        ]
+    },
+    "Equals": {
+        "description": "Check if two values are equal",
+        "inPorts": [
+            {
+                "id": "OPERAND1",
+                "type": "any|Node",
+                "description": "First value to compare"
+            },
+            {
+                "id": "OPERAND2",
+                "type": "any|Node",
+                "description": "Second value to compare"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if values are equal, false otherwise"
+            }
+        ]
+    },
+    "And": {
+        "description": "Logical AND of two boolean values",
+        "inPorts": [
+            {
+                "id": "OPERAND1",
+                "type": "Node",
+                "description": "First boolean condition"
+            },
+            {
+                "id": "OPERAND2",
+                "type": "Node",
+                "description": "Second boolean condition"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if both conditions are true, false otherwise"
+            }
+        ]
+    },
+    "Or": {
+        "description": "Logical OR of two boolean values",
+        "inPorts": [
+            {
+                "id": "OPERAND1",
+                "type": "Node",
+                "description": "First boolean condition"
+            },
+            {
+                "id": "OPERAND2",
+                "type": "Node",
+                "description": "Second boolean condition"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if either condition is true, false otherwise"
+            }
+        ]
+    },
+    "Not": {
+        "description": "Logical NOT of a boolean value",
+        "inPorts": [
+            {
+                "id": "OPERAND",
+                "type": "Node",
+                "description": "Boolean condition to negate"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if condition is false, false if condition is true"
+            }
+        ]
+    },
+    "Join": {
+        "description": "Concatenate two strings",
+        "inPorts": [
+            {
+                "id": "STRING1",
+                "type": "string|Node",
+                "description": "First string"
+            },
+            {
+                "id": "STRING2",
+                "type": "string|Node",
+                "description": "Second string"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "string",
+                "description": "Concatenated string"
+            }
+        ]
+    },
+    "LetterOf": {
+        "description": "Get nth letter of string (1-based indexing)",
+        "inPorts": [
+            {
+                "id": "LETTER_NUM",
+                "type": "number|Node",
+                "description": "Position of letter (1-based)"
+            },
+            {
+                "id": "STRING",
+                "type": "string|Node",
+                "description": "String to get letter from"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "string",
+                "description": "Single character at specified position (empty string if out of bounds)"
+            }
+        ]
+    },
+    "LengthOf": {
+        "description": "Get length of string",
+        "inPorts": [
+            {
+                "id": "STRING",
+                "type": "string|Node",
+                "description": "String to measure"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Number of characters in string"
+            }
+        ]
+    },
+    "Contains": {
+        "description": "Check if first string contains second string",
+        "inPorts": [
+            {
+                "id": "STRING1",
+                "type": "string|Node",
+                "description": "String to search in"
+            },
+            {
+                "id": "STRING2",
+                "type": "string|Node",
+                "description": "Substring to search for"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "boolean",
+                "description": "True if STRING1 contains STRING2, false otherwise"
+            }
+        ]
+    },
+    "Mod": {
+        "description": "Get remainder of division (modulo operation)",
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node", "description": "Dividend" },
+            { "id": "NUM2", "type": "number|Node", "description": "Divisor" }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Remainder of NUM1 divided by NUM2 (NaN if modulo by zero)"
+            }
+        ]
+    },
+    "Round": {
+        "description": "Round number to nearest integer",
+        "inPorts": [
+            {
+                "id": "NUM",
+                "type": "number|Node",
+                "description": "Number to round"
+            }
+        ],
+        "fields": [],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Rounded integer"
+            }
+        ]
+    },
+    "MathFunction": {
+        "description": "Apply mathematical function to number",
+        "inPorts": [
+            {
+                "id": "NUM",
+                "type": "number|Node",
+                "description": "Number to apply function to"
+            }
+        ],
+        "fields": [
+            {
+                "id": "OPERATOR",
+                "type": "string",
+                "description": "Mathematical function"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "number",
+                "description": "Result of mathematical function (NaN for invalid operations)"
+            }
+        ]
+    },
+    "SetVariable": {
+        "description": "Set variable to specified value",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "VALUE",
+                "type": "any|Node",
+                "description": "Value to assign to variable"
+            }
+        ],
+        "fields": [
+            {
+                "id": "VARIABLE",
+                "type": "string",
+                "description": "Name of variable to set"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "ChangeVariableBy": {
+        "description": "Change variable by specified amount",
+        "inPorts": [
+            {
+                "id": "EXEC",
+                "type": "Node",
+                "description": "Previous block that triggers this block"
+            },
+            {
+                "id": "VALUE",
+                "type": "any|Node",
+                "description": "Amount to change variable by"
+            }
+        ],
+        "fields": [
+            {
+                "id": "VARIABLE",
+                "type": "string",
+                "description": "Name of variable to change"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "THEN",
+                "type": "Node",
+                "description": "Next block to execute"
+            }
+        ]
+    },
+    "GetVariable": {
+        "description": "Get current value of variable",
+        "inPorts": [],
+        "fields": [
+            {
+                "id": "VARIABLE",
+                "type": "string",
+                "description": "Name of variable to get"
+            }
+        ],
+        "outPorts": [
+            {
+                "id": "OUTPUT",
+                "type": "any",
+                "description": "Current value of the variable (0 if variable doesn't exist)"
+            }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+When the green flag is clicked, simulate a heartbeat by growing and shrinking repeatedly.
+When the 'left arrow' key is pressed, change X by -20 and say "Going left!"
+When the green flag is clicked, wait until the 'a' key is pressed, then jump to (0, 0).
+When the green flag is clicked, alternate between saying "Tick" and "Tock" forever.
+When the 'x' key is pressed, say a randomly selected word from a list.

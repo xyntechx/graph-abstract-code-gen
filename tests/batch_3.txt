@@ -1,0 +1,5 @@
+When the green flag is clicked, simulate a spiral by increasing steps and turning each time.
+When the green flag is clicked, if size is greater than 100, say "Too big!".
+When the green flag is clicked, say a sentence constructed from 3 random words.
+When the 'r' key is pressed, simulate a die roll and say the result.
+When the green flag is clicked, count up for 5s from 0 to 100, saying each number.

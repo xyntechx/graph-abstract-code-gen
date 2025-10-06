@@ -1,0 +1,5 @@
+When the green flag is clicked, continuously move in a square pattern until the user presses the space key.
+When the 'r' key is pressed, set size to a random number between 50 and 150.
+When the 's' key is pressed, say a secret password made of two random letters and three random numbers.
+When the green flag is clicked, simulate a loading bar by incrementally increasing a progress variable and displaying it.
+When the green flag is clicked, repeat until key 'q' is pressed: move randomly.

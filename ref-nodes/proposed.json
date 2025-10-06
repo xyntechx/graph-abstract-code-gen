@@ -1,0 +1,405 @@
+{
+    "WhenFlagClicked": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "WhenKeyPressed": {
+        "inPorts": [],
+        "fields": [{ "id": "KEY_OPTION", "type": "string" }],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "MoveSteps": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "STEPS", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "TurnRight": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "DEGREES", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "TurnLeft": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "DEGREES", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "GoToRandom": {
+        "inPorts": [{ "id": "EXEC", "type": "Node" }],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "GotoXY": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "X", "type": "number|Node" },
+            { "id": "Y", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "GlideToRandom": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "SECS", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "GlideToXY": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "SECS", "type": "number|Node" },
+            { "id": "X", "type": "number|Node" },
+            { "id": "Y", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "PointInDirection": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "DIRECTION", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "ChangeXBy": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "DX", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "SetXTo": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "X", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "ChangeYBy": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "DY", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "SetYTo": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "Y", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "XPosition": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "YPosition": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Say": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "MESSAGE", "type": "string|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "SayForSecs": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "MESSAGE", "type": "string|Node" },
+            { "id": "SECS", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "Think": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "MESSAGE", "type": "string|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "ThinkForSecs": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "MESSAGE", "type": "string|Node" },
+            { "id": "SECS", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "ChangeSizeBy": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "CHANGE", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "SetSizeTo": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "SIZE", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "Wait": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "SECS", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "Repeat": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "TIMES", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN", "type": "Node" },
+            { "id": "SUBSTACK", "type": "List[Node]" }
+        ]
+    },
+    "Forever": {
+        "inPorts": [{ "id": "EXEC", "type": "Node" }],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN", "type": "Node" },
+            { "id": "SUBSTACK", "type": "List[Node]" }
+        ]
+    },
+    "If": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "CONDITION", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN", "type": "Node" },
+            { "id": "SUBSTACK", "type": "List[Node]" }
+        ]
+    },
+    "IfElse": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "CONDITION", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN", "type": "Node" },
+            { "id": "SUBSTACK_IF", "type": "List[Node]" },
+            { "id": "SUBSTACK_ELSE", "type": "List[Node]" }
+        ]
+    },
+    "WaitUntil": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "CONDITION", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "RepeatUntil": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "CONDITION", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [
+            { "id": "THEN", "type": "Node" },
+            { "id": "SUBSTACK", "type": "List[Node]" }
+        ]
+    },
+    "Stop": {
+        "inPorts": [{ "id": "EXEC", "type": "Node" }],
+        "fields": [{ "id": "STOP_OPTION", "type": "string" }],
+        "outPorts": []
+    },
+    "KeyPressed": {
+        "inPorts": [],
+        "fields": [{ "id": "KEY_OPTION", "type": "string" }],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "MouseDown": {
+        "inPorts": [],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Add": {
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node" },
+            { "id": "NUM2", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Subtract": {
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node" },
+            { "id": "NUM2", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Multiply": {
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node" },
+            { "id": "NUM2", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Divide": {
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node" },
+            { "id": "NUM2", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Random": {
+        "inPorts": [
+            { "id": "FROM_NUM", "type": "number|Node" },
+            { "id": "TO_NUM", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "GreaterThan": {
+        "inPorts": [
+            { "id": "OPERAND1", "type": "any|Node" },
+            { "id": "OPERAND2", "type": "any|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "LessThan": {
+        "inPorts": [
+            { "id": "OPERAND1", "type": "any|Node" },
+            { "id": "OPERAND2", "type": "any|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Equals": {
+        "inPorts": [
+            { "id": "OPERAND1", "type": "any|Node" },
+            { "id": "OPERAND2", "type": "any|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "And": {
+        "inPorts": [
+            { "id": "OPERAND1", "type": "Node" },
+            { "id": "OPERAND2", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Or": {
+        "inPorts": [
+            { "id": "OPERAND1", "type": "Node" },
+            { "id": "OPERAND2", "type": "Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Not": {
+        "inPorts": [{ "id": "OPERAND", "type": "Node" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Join": {
+        "inPorts": [
+            { "id": "STRING1", "type": "string|Node" },
+            { "id": "STRING2", "type": "string|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "string" }]
+    },
+    "LetterOf": {
+        "inPorts": [
+            { "id": "LETTER_NUM", "type": "number|Node" },
+            { "id": "STRING", "type": "string|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "string" }]
+    },
+    "LengthOf": {
+        "inPorts": [{ "id": "STRING", "type": "string|Node" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Contains": {
+        "inPorts": [
+            { "id": "STRING1", "type": "string|Node" },
+            { "id": "STRING2", "type": "string|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "boolean" }]
+    },
+    "Mod": {
+        "inPorts": [
+            { "id": "NUM1", "type": "number|Node" },
+            { "id": "NUM2", "type": "number|Node" }
+        ],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "Round": {
+        "inPorts": [{ "id": "NUM", "type": "number|Node" }],
+        "fields": [],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "MathFunction": {
+        "inPorts": [{ "id": "NUM", "type": "number|Node" }],
+        "fields": [{ "id": "OPERATOR", "type": "string" }],
+        "outPorts": [{ "id": "OUTPUT", "type": "number" }]
+    },
+    "SetVariable": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "VALUE", "type": "any|Node" }
+        ],
+        "fields": [{ "id": "VARIABLE", "type": "string" }],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "ChangeVariableBy": {
+        "inPorts": [
+            { "id": "EXEC", "type": "Node" },
+            { "id": "VALUE", "type": "any|Node" }
+        ],
+        "fields": [{ "id": "VARIABLE", "type": "string" }],
+        "outPorts": [{ "id": "THEN", "type": "Node" }]
+    },
+    "GetVariable": {
+        "inPorts": [],
+        "fields": [{ "id": "VARIABLE", "type": "string" }],
+        "outPorts": [{ "id": "OUTPUT", "type": "any" }]
+    }
+}
